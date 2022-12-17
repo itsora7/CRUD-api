@@ -1,0 +1,31 @@
+### get all the users
+
+GET http://127.0.0.1:8000/users
+
+### post all the users
+
+POST  http://127.0.0.1:8000/users
+Content-Type: application/json
+
+{
+    "fName" : "Ark",
+    "lName" : "Shrestha",
+    "email" : "arkstha@gmail.com",
+    "password": "qwert"
+}
+
+### update all the users
+
+PUT   http://127.0.0.1:8000/users
+Content-Type: application/json
+
+{
+    "_id" : "639d7883df48435df7739fd1",
+    "fName" : "Ark",
+    "lName" : "Shrestha",
+    "password": "qwertyuiop"
+}
+
+### delete single user
+
+DELETE  http://127.0.0.1:8000/users/639d7883df48435df7739fd1
